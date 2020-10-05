@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+* {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-family: "BioRhyme", serif, "Work Sans", sans-serif;
+  color: #ebe9ea;
+  background-color: #acbaa8;
+  font-size: 62.5%;
+  font-weight: 600;
+}
+.linebreak {
+  display: flex;
+  background-color: #acbaa8;
+  width: 100%;
+  border: 1px solid #ebe9ea;
+}
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align:center;
+}
+h1 {
+  font-size: 6.4rem;
+  /* margin: 4rem 4rem 0.4rem 4rem; */
+  margin: 1% 0 0 1%;
+  font-style: normal;
+  text-transform: none;
+}
+h2 {
+  font-size: 2.72rem;
+  text-transform: uppercase;
+  /* margin-bottom: 4rem; */
+  margin-bottom: 1%;
+  font-weight: 100;
+  font-family: "Work Sans", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+.headerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46vh;
+  height: 25vh;
+  background: url("assets/river.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1.5%;
+  border-radius: 5px;
+  box-shadow: 0.4rem 0.4rem 0.8rem #1f2a3b;
+  transition: 0.3s;
+  border: none;
+}
+.headerImg:hover {
+  box-shadow: 0.4rem 0.4rem 0.8rem 0.04rem #1f2a3b;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.2rem solid #ebe9ea;
+  color: #ebe9ea;
+  /* margin: 100px; */
+}
+.linkItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 5.6rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #ebe9ea;
+  font-family: "Work Sans", sans-serif;
+  /* border: 1px solid black; */
+  transition: 0.3s;
+  /* margin: 3%; */
+}
+.linkItems:hover {
+  width: 22rem;
+  background-color: #b29497;
+}
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+.mainContent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 120rem;
+}
+.mainContent .item {
+  display: flex;
+  flex-direction: column;
+  /* margin:10rem; */
+  transition: 0.3s;
+  /* height: 30rem; */
+  width: 30rem;
+  height: 30rem;
+  margin: 7%;
+  box-shadow: 0.4rem 0.4rem 0.4rem #1f2a3b;
+}
+.mainContent .item:hover {
+  box-shadow: 0.4rem 0.4rem 0.4rem 0.16rem #1f2a3b;
+}
+.itemText {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  margin: 3.7% 0 3.7% 0;
+  font-weight: 100;
+}
+.contactMe {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #b29497;
+  height: 7vh;
+  align-items: center;
+  border-top: 0.24rem solid#EBE9EA;
+  border-bottom: 0.24rem solid#EBE9EA;
+}
+.contactMe .footerItems:nth-of-type(3) {
+  margin-right: 1.6%;
+}
+.footerItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ebe9ea;
+  width: 16rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  /* border: 1px solid black; */
+  transition: 0.3s;
+}
+.footerItems:hover {
+  width: 22rem;
+}
+/*Media Queries*/
+@media (max-width: 800px) {
+  .contactMe {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .headerImg {
+    margin: 5%;
+  }
+  .contactMe {
+    margin-top: 7%;
+  }
+}
