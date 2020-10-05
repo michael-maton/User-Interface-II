@@ -132,8 +132,8 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
 * {
   /* border: 1px solid black; */
-  box-sizing:border-box;
-  max-width:100%;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 html {
@@ -149,7 +149,8 @@ html {
   width: 100%;
   border: 1px solid #ebe9ea;
 }
-h1, h2 {
+h1,
+h2 {
   display: flex;
   justify-content: center;
 }
@@ -176,16 +177,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width:46vh;
-  height:25vh;
+  width: 46vh;
+  height: 25vh;
   background: url("assets/river.jpg");
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   margin: 1.5%;
   border-radius: 5px;
   box-shadow: 0.4rem 0.4rem 0.8rem #1f2a3b;
   transition: 0.3s;
-  border:none;
+  border: none;
 }
 .headerImg:hover {
   box-shadow: 0.4rem 0.4rem 0.8rem 0.04rem #1f2a3b;
@@ -216,7 +217,7 @@ header {
   background-color: #b29497;
 }
 .mainContainer {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 .mainContent {
@@ -272,4 +273,18 @@ header {
 }
 .footerItems:hover {
   width: 22rem;
+}
+/*Media Queries*/
+@media (max-width: 500px) {
+  .headerImg {
+    margin: 5%;
+  }
+  .contactMe {
+    margin-top: 7%;
+  }
+}
+@media (max-width: 360px) {
+  h1 {
+    text-align: center;
+  }
 }
