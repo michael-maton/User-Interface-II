@@ -86,7 +86,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  /* border: 0; */
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -130,6 +130,12 @@ table {
 
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+* {
+  /* border: 1px solid black; */
+  box-sizing:border-box;
+  max-width:100%;
+}
+
 html {
   font-family: "BioRhyme", serif, "Work Sans", sans-serif;
   color: #ebe9ea;
@@ -137,26 +143,28 @@ html {
   font-size: 62.5%;
   font-weight: 600;
 }
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 6.4rem;
-  margin: 4rem 4rem 0.4rem 4rem;
-  font-style: normal;
-  text-transform: none;
-}
 .linebreak {
   display: flex;
   background-color: #acbaa8;
   width: 100%;
   border: 1px solid #ebe9ea;
 }
-h2 {
+h1, h2 {
   display: flex;
   justify-content: center;
+}
+h1 {
+  font-size: 6.4rem;
+  /* margin: 4rem 4rem 0.4rem 4rem; */
+  margin: 1% 0 0 1%;
+  font-style: normal;
+  text-transform: none;
+}
+h2 {
   font-size: 2.72rem;
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
+  margin-bottom: 1%;
   font-weight: 100;
   font-family: "Work Sans", sans-serif;
 }
@@ -166,15 +174,18 @@ header {
 }
 .headerImg {
   display: flex;
-  justify-content: flex-end;
-  background: url("assets/Image-1.jpg");
-  width: 60rem;
-  height: 32rem;
-  background-position: -6rem -39.6rem;
-  border-radius: 0.4rem;
-  margin: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  width:46vh;
+  height:25vh;
+  background: url("assets/river.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  margin: 1.5%;
+  border-radius: 5px;
   box-shadow: 0.4rem 0.4rem 0.8rem #1f2a3b;
   transition: 0.3s;
+  border:none;
 }
 .headerImg:hover {
   box-shadow: 0.4rem 0.4rem 0.8rem 0.04rem #1f2a3b;
@@ -204,25 +215,25 @@ header {
   width: 22rem;
   background-color: #b29497;
 }
+.mainContainer {
+  display:flex;
+  justify-content: center;
+}
 .mainContent {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  height:80%;
   width: 120rem;
-  margin:0 auto;
-}
-.mainContainer {
-    display:flex;
 }
 .mainContent .item {
   display: flex;
   flex-direction: column;
   /* margin:10rem; */
   transition: 0.3s;
-  height: 30rem;
+  /* height: 30rem; */
   width: 30rem;
-  margin: 8rem;
+  height: 30rem;
+  margin: 7%;
   box-shadow: 0.4rem 0.4rem 0.4rem #1f2a3b;
 }
 .mainContent .item:hover {
@@ -239,7 +250,7 @@ header {
   display: flex;
   justify-content: flex-end;
   background-color: #b29497;
-  height: 8rem;
+  height: 7vh;
   align-items: center;
   border-top: 0.24rem solid#EBE9EA;
   border-bottom: 0.24rem solid#EBE9EA;
@@ -253,7 +264,6 @@ header {
   align-items: center;
   color: #ebe9ea;
   width: 16rem;
-  height: 5.4rem;
   font-size: 1.6rem;
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
