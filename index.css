@@ -153,6 +153,7 @@ h1,
 h2 {
   display: flex;
   justify-content: center;
+  text-align:center;
 }
 h1 {
   font-size: 6.4rem;
@@ -275,16 +276,16 @@ header {
   width: 22rem;
 }
 /*Media Queries*/
+@media (max-width: 800px) {
+  .contactMe {
+    margin-top: 4%;
+  }
+}
 @media (max-width: 500px) {
   .headerImg {
     margin: 5%;
   }
   .contactMe {
     margin-top: 7%;
-  }
-}
-@media (max-width: 360px) {
-  h1 {
-    text-align: center;
   }
 }
